@@ -37,8 +37,9 @@ function displayBooks(booksArray) {
         } else {
             reviews = 0;
         }
+
         const bookCard = `
-        <li class="books__card">
+        <li class="books__card" id="${book.id}">
             <img src="${book.coverUrl}" alt="${book.title} book cover" class="books__card-img">
             <div class="books__info-box">
             <h6 class="heading books__author">${author}</h6>
@@ -59,13 +60,16 @@ function displayBooks(booksArray) {
         </li>`;
         booksList.insertAdjacentHTML('beforeend', bookCard);
 
-        const stars = Array.from(document.querySelectorAll('.review-star'));
+        const currentBook = document.getElementById(book.id)
 
-        if (book.rating && book.reviews) {
+        let stars = Array.from(currentBook.querySelectorAll('.review-star'));
+
+        if (book.rating || book.reviews) {
 
             if (!Number.isInteger(book.rating)) {
                 book.rating = Math.floor(book.rating);
             }
+            console.log(book.title, book.rating)
             switch (book.rating) {
                 case 1:
                     stars[0].src = './imgs/books-imgs/Star-gold.svg';
@@ -73,7 +77,7 @@ function displayBooks(booksArray) {
                 case 2:
                     stars[0].src = './imgs/books-imgs/Star-gold.svg';
                     stars[1].src = './imgs/books-imgs/Star-gold.svg';
-                    console.log('im here');
+                    //console.log('im here');
                     break;
                 case 3:
                     stars[0].src = './imgs/books-imgs/Star-gold.svg';
@@ -96,7 +100,10 @@ function displayBooks(booksArray) {
                 default:
                     console.log('default');
             }
+            debugger
+
         }
+        stars = [];
     });
 
     // shopping buttons
