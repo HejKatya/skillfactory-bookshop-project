@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Open+Sans&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./dist/main.css">
+	<title>Bookshop</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<h2 class="heading header__logo">Bookshop</h2>
+			<nav class="header__nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="" class="nav__link active">books</a>
+					</li>
+					<li class="nav__item">
+						<a href="" class="nav__link">audiobooks</a>
+					</li>
+					<li class="nav__item">
+						<a href="" class="nav__link">Stationery & gifts</a>
+					</li>
+					<li class="nav__item">
+						<a href="" class="nav__link">blog</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="header__icons">
+				<li class="icons__item user"></li>
+				<li class="icons__item search"></li>
+				<li class="icons__item bag">
+					<!-- <div class="items-number">1</div> -->
+				</li>
+			</ul>
+			<div class="header__burger"></div>
+		</div>
+		<nav class="hidden__nav not-active">
+			<ul class="hidden__nav-list">
+				<li class="hidden__nav-item">
+					<a href="" class="nav__link active">books</a>
+				</li>
+				<li class="hidden__nav-item">
+					<a href="" class="nav__link">audiobooks</a>
+				</li>
+				<li class="hidden__nav-item">
+					<a href="" class="nav__link">Stationery & gifts</a>
+				</li>
+				<li class="hidden__nav-item">
+					<a href="" class="nav__link">blog</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<main class="container">
+		<section class="slider">
+			<img src="./imgs/slider-imgs/slider1.png"
+				alt="illustration with people holding books. it reads 'black friday sale up to 60%'"
+				class="slider__img">
+			<div class="slider__dots-container">
+				<div class="slider-dot active"></div>
+				<div class="slider-dot"></div>
+				<div class="slider-dot"></div>
+			</div>
+			<a href="" class="slider__box purple">
+				<div class="slider__box__text">
+					change old book on new
+				</div>
+			</a>
+			<a href="" class="slider__box pink">
+				<div class="slider__box__text">
+					top 100 books 2022
+				</div>
+			</a>
+		</section>
+		<section class="books">
+			<ul class="books__list">
+				<li class="books__category active">
+					Architecture
+				</li>
+				<li class="books__category">
+					Art & Fashion
+				</li>
+				<li class="books__category">
+					Biography
+				</li>
+				<li class="books__category">
+					Business
+				</li>
+				<li class="books__category">
+					Crafts & Hobbies
+				</li>
+				<li class="books__category">
+					Drama
+				</li>
+				<li class="books__category">
+					Fiction
+				</li>
+				<li class="books__category">
+					Food & Drink
+				</li>
+				<li class="books__category">
+					Health & Wellbeing
+				</li>
+				<li class="books__category">
+					History & Politics
+				</li>
+				<li class="books__category">
+					Humor
+				</li>
+				<li class="books__category">
+					Poetry
+				</li>
+				<li class="books__category">
+					Psychology
+				</li>
+				<li class="books__category">
+					Science
+				</li>
+				<li class="books__category">
+					Technology
+				</li>
+				<li class="books__category">
+					Travel & Maps
+				</li>
+			</ul>
+			<div class="books__container">
+				<div class="books__arrow"></div>
+				<ul class="books__cards">
+				</ul>
+				<button class="btn books__load-btn">load more</button>
+			</div>
+
+		</section>
+	</main>
+
+	<script src="./dist/super.js"></script>
+	<!-- <script src="./scripts/index.js" type="module"></script> -->
+	<!-- <script src="./scripts/menu-burger.js" type="module"></script> -->
+	<!-- <script src="./scripts/slider.js"></script>
+	<script src="./scripts/categories.js"></script> -->
+</body>
+
+</html>

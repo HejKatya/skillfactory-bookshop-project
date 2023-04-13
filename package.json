@@ -1,0 +1,34 @@
+{
+  "name": "bookshop",
+  "version": "1.0.0",
+  "description": "skillfactory bookshop project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HejKatya/skillfactory-bookshop-project.git"
+  },
+  "author": "HejKatya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HejKatya/skillfactory-bookshop-project/issues"
+  },
+  "homepage": "https://github.com/HejKatya/skillfactory-bookshop-project#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.38.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "style-loader": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "normalize.css": "^8.0.1"
+  }
+}

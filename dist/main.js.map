@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "file": "main.js",
+    "mappings": ";;;;;AAAA,gC",
+    "sources": [
+        "webpack://bookshop/./scripts/index.js"
+    ],
+    "sourcesContent": [
+        "document.write('Hello, world!');"
+    ],
+    "names": [],
+    "sourceRoot": ""
+}
