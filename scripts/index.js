@@ -37,8 +37,14 @@ function displayBooks(booksArray) {
         } else {
             reviews = 0;
         }
+        let description;
+        if (!book.description) {
+            description = ' '
+        } else {
+            description = book.description
+        }
         const bookCard = `
-        <li class="books__card">
+        <li class="books__card" id="${book.id}">
             <img src="${book.coverUrl}" alt="${book.title} book cover" class="books__card-img">
             <div class="books__info-box">
             <h6 class="heading books__author">${author}</h6>
@@ -52,7 +58,7 @@ function displayBooks(booksArray) {
             <img src="./imgs/books-imgs/Star-gray.svg" class="review-star">
             </div>
             ${reviews} reviews</h6>
-            <p class="books__about">${book.description}</p>
+            <p class="books__about">${description}</p>
             <h5 class="heading books__price">${book.currency} ${book.price}</h5>
             <button id="${book.id}" class="books__btn btn">buy now</button>
             </div>
